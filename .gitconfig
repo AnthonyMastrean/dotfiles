@@ -1,0 +1,21 @@
+[core]
+  autocrlf = false
+  editor = notepad
+  mergeoptions = --no-ff
+  pager = less -r
+[user]
+  name = Anthony Mastrean
+  email = anthony.mastrean@gmail.com
+[help]
+  autocorrect = 1
+[pull]
+  rebase = true
+[diff]
+  algorithm = patience
+[alias]
+  standup = log --since yesterday --oneline --author ''
+  pretty = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  l = log --oneline --decorate
+  wdiff = diff --word-diff --patience
+  stat = status -s
+  purge = clean -xdf

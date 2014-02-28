@@ -1,0 +1,30 @@
+[ui]
+username = Anthony Mastrean <anthony.mastrean@gmail.com>
+merge = diffmerge
+
+[auth]
+bitbucket.prefix = bitbucket.org
+bitbucket.username = anthonymastrean
+bitbucket.password = password
+bitbucket.schemes = http https
+
+[extensions]
+color = 
+extdiff =
+histedit =
+purge = 
+rebase =
+record = 
+
+[color]
+mode = win32
+
+[extdiff]
+cmd.diffmerge = C:\Program Files\SourceGear\Common\DiffMerge\sgdm.exe
+
+[merge-tools]
+diffmerge.executable = C:\Program Files\SourceGear\Common\DiffMerge\sgdm.exe
+diffmerge.args = -merge -result=$output -t1="Local Version" -t2=$output -t3="Other Version" -caption=$output $local $base $other
+diffmerge.binary = False
+diffmerge.symlinks = False
+diffmerge.gui = True
