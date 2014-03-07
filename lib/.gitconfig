@@ -12,6 +12,10 @@
   rebase = true
 [diff]
   algorithm = patience
+[difftool]
+  prompt = false
+[mergetool]
+  prompt = false
 [alias]
   standup = log --since yesterday --oneline --author ''
   pretty = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
