@@ -19,14 +19,14 @@ $ rake
 You do not have sufficient privilege to perform this operation.
 ```
 
-You might see this error if you haven't purged the existing dotfiles (`mklink` does not support overwriting).
+You might see this error if you haven't purged your existing dotfiles (`mklink` does not support overwriting).
 
 ```bash
 $ rake
 Cannot create a file when that file already exists.
 ```
 
-We defined a `clobber` task to remove the existing dotfiles. If you've reviewed the task and are ready to take the plunge, run this in an elevated shell.
+We defined a `clobber` task to remove your existing dotfiles. If you're ready to take the plunge, run this in an elevated shell.
 
 ```bash
 $ rake clobber default
