@@ -1,33 +1,19 @@
-require "pathname"
+require "rake/clean"
 
-class Pathname
-  def lefttruncate(dir)
-    chunks = []
-    ascend() do |path|
-      chunk = File.basename(path)
-      break if chunk == dir
-      chunks << chunk
-    end
-    
-    File.join(chunks.reverse)
-  end
-end
+PATHMAP = { 
+  ".subversion" => File.join(ENV["APPDATA"].gsub("\\", "/"), "Subversion/config") 
+}
 
-def to_dotfile(path)
-  File.expand_path(File.join("~", Pathname.new(path).lefttruncate("lib")))
-end
+SOURCES = Dir.glob("lib/*", File::FNM_DOTMATCH).select{ |path| File.file?(path) }.map{ |path| File.expand_path(path) }
+DOTFILES = SOURCES.map{ |path| PATHMAP[File.basename(path)] || File.expand_path(File.join("~", File.basename(path))) }
 
-SOURCE = Dir.glob("lib/**/*", File::FNM_DOTMATCH).select{ |path| File.file?(path) }
-DOTFILES = SOURCE.map{ |path| to_dotfile(path) }
+CLOBBER.include(DOTFILES)
 
-task :default => :up
+desc "Make links to all of the dotfiles"
+task :default => DOTFILES
 
-desc "update all of the dotfiles"
-task :up => DOTFILES
-
-SOURCE.zip DOTFILES do |source, dotfile|
-  file dotfile => source do |task|
-    mkdir_p File.dirname(dotfile)
-    system "cp #{source} #{dotfile}"
+SOURCES.zip DOTFILES do |source, dotfile|
+  file dotfile => source do
+    system "cmd /c mklink \"#{dotfile}\" \"#{source}\""
   end
 end

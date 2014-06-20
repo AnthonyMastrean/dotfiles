@@ -1,19 +1,34 @@
 # dotfiles
 
-My precious dotfiles
+My precious dotfiles.
 
 ## Getting Started
 
-I don't really know what I'm doing here yet, so the "getting started" is pretty lame. Clone this repository anywhere. It should work from any path. But, remember, you should modify the files in this repo and not on your local machine. So, I like to put it "near" my real dotfiles.
+This repository assumes Windows and all the lovely features that implies. Check which dotfiles are controlled and where we're going to link them.
 
 ```bash
-$ git clone git@github.com:AnthonyMastrean/dotfiles.git ~/.dotfiles
+$ rake -P
 ```
 
 ## Usage
 
-Then, you can overwrite any _older_ dotfiles in your home directory with ones from this repository.
+The default rake task creates a symbolic link from the target dotfile to the controlled dotfile. It requires a privileged shell, so you might see this on your first run.
 
 ```bash
-$ rake update
+$ rake
+You do not have sufficient privilege to perform this operation.
+```
+
+You might see this error if you haven't purged the existing dotfiles (`mklink` does not support overwriting).
+
+```bash
+$ rake
+Cannot create a file when that file already exists.
+```
+
+We defined a `clobber` task to remove the existing dotfiles. If you've reviewed the task and are ready to take the plunge, run this in an elevated shell.
+
+```bash
+$ rake clobber default
+symbolic link created for C:/Users/anthony/.bashrc <<===>> C:/Users/anthony/dotfiles/lib/.bashrc
 ```
