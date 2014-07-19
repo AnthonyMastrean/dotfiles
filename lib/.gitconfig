@@ -3,6 +3,7 @@
   editor = notepad
   mergeoptions = --no-ff
   pager = less -r
+  excludesfile = ~/.gitignore
 [user]
   name = Anthony Mastrean
   email = anthony.mastrean@gmail.com
