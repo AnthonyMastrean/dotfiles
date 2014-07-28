@@ -24,3 +24,5 @@
   wdiff = diff --word-diff --patience
   stat = status -s
   purge = clean -xdf
+[push]
+  default = simple

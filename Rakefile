@@ -14,6 +14,7 @@ task :default => DOTFILES
 
 SOURCES.zip DOTFILES do |source, dotfile|
   file dotfile => source do
+    puts ">> #{dotfile}"
     system "cmd /c mklink \"#{dotfile}\" \"#{source}\""
   end
 end
