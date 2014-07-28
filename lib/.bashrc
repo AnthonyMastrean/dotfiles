@@ -21,6 +21,6 @@ export GIT_PS1_SHOWUPSTREAM="auto"
 PS1="\n${GREEN}\u@\h${OFF} ${ORANGE}\w${OFF}\$(__git_ps1)\n\$ "
 
 # Aliases
-alias ls='ls -lhA'
-alias df='df -h'
-alias irb='irb --noreadline'
+alias ls="ls -lhA"
+alias df="df -h"
+alias irb="irb --noreadline"
