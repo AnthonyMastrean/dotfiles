@@ -10,7 +10,7 @@ DOTFILES = SOURCES.map{ |path| PATHMAP[File.basename(path)] || File.expand_path(
 CLOBBER.include(DOTFILES)
 
 desc "Make links to all of the dotfiles"
-task :default => DOTFILES
+task :default => [:clobber, DOTFILES].flatten
 
 SOURCES.zip DOTFILES do |source, dotfile|
   file dotfile => source do
