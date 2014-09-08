@@ -22,6 +22,5 @@ export GIT_PS1_SHOWCOLORHINTS=1
 PROMPT_COMMAND='__git_ps1 "\n${GREEN}\u@\h${OFF} ${ORANGE}\w${OFF}" "\n\\\$ "'
 
 # aliases
-alias ls="ls -lhA"
-alias df="df -h"
+alias ll="ls -lhA"
 alias irb="irb --noreadline"
