@@ -22,7 +22,7 @@
   pretty = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
   l = log --oneline --decorate
   wdiff = diff --word-diff --patience
-  stat = status -s
-  purge = clean -xdf
+  stat = status --short --branch
+  purge = clean --force -xd
 [push]
   default = simple
