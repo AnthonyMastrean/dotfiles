@@ -24,3 +24,22 @@ PROMPT_COMMAND='__git_ps1 "\n${GREEN}\u@\h${OFF} ${ORANGE}\w${OFF}" "\n\\\$ "'
 # aliases
 alias ll="ls -lhA"
 alias irb="irb --noreadline"
+
+# simple scp/ssh combo to copy privileged files
+function dumbscp {
+  local SSH_QUIET_TTY="ssh -o LogLevel=QUIET -t"
+
+  local LOCAL="$1"
+  local REMOTE="$2"
+
+  local HOST="${REMOTE%:*}"
+  local CANDIDATE="${REMOTE#*:}"
+  local FILENAME="$(basename "$LOCAL")"
+  local TARGET="$($SSH_QUIET_TTY "$HOST" [ -f "$CANDIDATE" ] && echo "$CANDIDATE" || echo "${CANDIDATE%/}/$FILENAME")"
+  local TEMP="$($SSH_QUIET_TTY "$HOST" mktemp)"
+
+  echo "[dumbscp] $LOCAL => $HOST:$TARGET via $TEMP"
+
+  scp "$LOCAL" "$HOST:$TEMP"
+  $SSH_QUIET_TTY "$HOST" "sudo cp $TEMP $TARGET && rm $TEMP"
+}
