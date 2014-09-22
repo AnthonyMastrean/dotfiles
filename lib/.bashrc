@@ -43,3 +43,7 @@ function dumbscp {
   scp "$LOCAL" "$HOST:$TEMP"
   $SSH_QUIET_TTY "$HOST" "sudo cp $TEMP $TARGET && rm $TEMP"
 }
+
+function ssh_authorize {
+  return 0
+}
