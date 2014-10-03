@@ -30,5 +30,5 @@ alias ll="ls -lhA"
 alias irb="irb --noreadline"
 
 # custom functions
-. ~/.dotfiles/bash/authssh.sh
-. ~/.dotfiles/bash/dumbscp.sh
+. ~/.dotfiles/bin/authssh.sh
+. ~/.dotfiles/bin/dumbscp.sh
