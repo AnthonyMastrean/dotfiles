@@ -15,8 +15,8 @@ export HISTSIZE=10000
 shopt -s histappend
 
 # git
-. ~/git-completion.sh
-. ~/git-prompt.sh
+. ~/bin/git-completion.bash
+. ~/bin/git-prompt.sh
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
