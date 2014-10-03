@@ -9,6 +9,11 @@ readonly OFF="\e[m"
 readonly GREEN="\e[0;32m"
 readonly ORANGE="\e[0;33m"
 
+# history
+export HISTCONTROL=ignoreboth
+export HISTSIZE=10000
+shopt -s histappend
+
 # git
 . ~/git-completion.sh
 . ~/git-prompt.sh
