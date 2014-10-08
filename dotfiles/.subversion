@@ -1,2 +1,4 @@
 [helpers]
 editor-cmd = notepad
+diff-cmd = "%USERPROFILE%/.dotfiles/bin/svn-diff-cmd.bat"
+merge-tool-cmd = "%USERPROFILE%/.dotfiles/bin/svn-merge-cmd.bat"
