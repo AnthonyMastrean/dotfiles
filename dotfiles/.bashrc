@@ -29,6 +29,3 @@ PROMPT_COMMAND='__git_ps1 "\n${GREEN}\u@\h${OFF} ${ORANGE}\w${OFF}" "\n\\\$ "'
 alias ll="ls -lhA"
 alias irb="irb --noreadline"
 
-# custom functions
-. ~/.dotfiles/bin/authssh.sh
-. ~/.dotfiles/bin/dumbscp.sh
