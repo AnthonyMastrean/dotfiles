@@ -1,3 +1,5 @@
+*.sublime-workspace
+.bundle
 .DS_Store
 .vagrant
 Thumbs.db
