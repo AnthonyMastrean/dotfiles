@@ -14,7 +14,6 @@ task :default => [:clobber, DOTFILES].flatten
 
 SOURCES.zip DOTFILES do |source, dotfile|
   file dotfile => source do
-    puts "[dotfiles] #{dotfile}"
     system "cmd /c mklink \"#{dotfile}\" \"#{source}\""
   end
 end
