@@ -13,7 +13,7 @@
   rebase = true
 [diff]
   algorithm = patience
-	tool = diffmerge
+  tool = diffmerge
 [difftool]
   prompt = false
 [mergetool]
@@ -28,9 +28,9 @@
 [push]
   default = simple
 [difftool "diffmerge"]
-	cmd = sgdm.exe \"$LOCAL\" \"$REMOTE\"
+  cmd = sgdm.exe \"$LOCAL\" \"$REMOTE\"
 [merge]
-	tool = diffmerge
+  tool = diffmerge
 [mergetool "diffmerge"]
-	trustExitCode = true
-	cmd = sgdm.exe /merge /result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+  trustExitCode = true
+  cmd = sgdm.exe /merge /result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
