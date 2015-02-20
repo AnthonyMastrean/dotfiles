@@ -28,9 +28,9 @@
 [push]
   default = simple
 [difftool "diffmerge"]
-	cmd = C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe \"$LOCAL\" \"$REMOTE\"
+	cmd = sgdm.exe \"$LOCAL\" \"$REMOTE\"
 [merge]
 	tool = diffmerge
 [mergetool "diffmerge"]
 	trustExitCode = true
-	cmd = C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe /merge /result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	cmd = sgdm.exe /merge /result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
