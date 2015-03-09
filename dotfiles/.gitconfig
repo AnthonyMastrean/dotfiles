@@ -1,5 +1,5 @@
 [core]
-  autocrlf = true
+  autocrlf = false
   editor = notepad
   mergeoptions = --no-ff
   pager = less -r
