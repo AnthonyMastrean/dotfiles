@@ -1,7 +1,8 @@
 require "rake/clean"
 
-PATHMAP = { 
-  ".subversion" => File.join(ENV["APPDATA"].gsub("\\", "/"), "Subversion", "config") 
+PATHMAP = {
+  ".subversion" => File.join(ENV["APPDATA"].gsub("\\", "/"), "Subversion/config"),
+  ".sublime-settings" => File.join(ENV["APPDATA"].gsub("\\", "/"), "Sublime Text 3/Packages/User/Preferences.sublime-settings")
 }
 
 SOURCES = Dir.glob("dotfiles/*", File::FNM_DOTMATCH).select{ |path| File.file?(path) }.map{ |path| File.expand_path(path) }
