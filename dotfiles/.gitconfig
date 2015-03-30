@@ -1,7 +1,5 @@
 [core]
-  autocrlf = false
   editor = notepad
-  mergeoptions = --no-ff
   pager = less -r
   excludesfile = ~/.gitignore
 [user]
@@ -9,8 +7,6 @@
   email = anthony.mastrean@gmail.com
 [help]
   autocorrect = 1
-[pull]
-  rebase = true
 [diff]
   algorithm = patience
   tool = diffmerge
