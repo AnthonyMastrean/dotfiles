@@ -1,5 +1,6 @@
 *.sublime-workspace
 .bundle
+.cekey
 .DS_Store
 .vagrant
 Thumbs.db
