@@ -1,6 +1,4 @@
 #!/bin/bash
-# set -euo pipefail
-# IFS=$'\n\t'
 
 # .bashrc
 if [ -f /etc/bashrc ]; then
