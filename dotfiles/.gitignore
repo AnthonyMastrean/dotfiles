@@ -1,6 +1,11 @@
-*.sublime-workspace
+#---[ directories ]----------
 .bundle
+.vagrant
+
+#---[ files ]----------------
 .cekey
 .DS_Store
-.vagrant
 Thumbs.db
+
+#---[ file types ]-----------
+*.sublime-workspace
