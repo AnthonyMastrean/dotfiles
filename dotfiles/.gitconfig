@@ -1,32 +1,33 @@
 [core]
-  editor = notepad
-  pager = less -r
-  excludesfile = ~/.gitignore
+  editor        = notepad
+  pager         = less -r
+  excludesfile  = ~/.gitignore
 [user]
-  name = Anthony Mastrean
-  email = anthony.mastrean@gmail.com
+  name          = Anthony Mastrean
+  email         = anthony.mastrean@gmail.com
 [help]
-  autocorrect = 1
+  autocorrect   = 1
 [diff]
-  algorithm = patience
-  tool = diffmerge
+  algorithm     = patience
+  tool          = diffmerge
 [difftool]
-  prompt = false
+  prompt        = false
 [mergetool]
-  prompt = false
+  prompt        = false
 [alias]
-  standup = log --since yesterday --oneline --author ''
-  pretty = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-  l = log --oneline --decorate
-  wdiff = diff --word-diff --patience
-  stat = status --short --branch
-  purge = clean --force -xd
+  standup       = log --author '' --color --decorate --oneline --since yesterday
+  pretty        = log --decorate --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  wdiff         = diff --word-diff --patience
+  stat          = status --short --branch
+  purge         = clean --force -xd
+  edit          = commit --amend
+  unstage       = reset HEAD
 [push]
-  default = simple
+  default       = simple
 [difftool "diffmerge"]
-  cmd = "sgdm.exe \"$LOCAL\" \"$REMOTE\""
+  cmd           = "sgdm.exe \"$LOCAL\" \"$REMOTE\""
 [merge]
-  tool = diffmerge
+  tool          = diffmerge
 [mergetool "diffmerge"]
   trustExitCode = true
-  cmd = "sgdm.exe --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\""
+  cmd           = "sgdm.exe --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\""
