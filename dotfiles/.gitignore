@@ -9,3 +9,5 @@ Thumbs.db
 
 #---[ file types ]-----------
 *.sublime-workspace
+*.orig
+*.rej
