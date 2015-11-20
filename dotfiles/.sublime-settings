@@ -1,7 +1,17 @@
 {
 	"color_scheme": "Packages/User/SublimeLinter/Solarized (Dark) (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		".vagrant",
+		".bundle",
+		"CVS"
+	],
 	"font_face": "DejaVu Sans Mono",
+	"font_size": 11,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -17,5 +27,6 @@
 	"spell_check": "auto",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"hot_exit": false
 }
