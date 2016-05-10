@@ -2,3 +2,6 @@
 editor-cmd = notepad
 diff-cmd = "%USERPROFILE%/dotfiles/bin/svn-diff-cmd.bat"
 merge-tool-cmd = "%USERPROFILE%/dotfiles/bin/svn-merge-cmd.bat"
+
+[miscellany]
+global-ignores = .vagrant .cekey .DS_Store Thumbs.db
