@@ -5,6 +5,9 @@ if [ -f /etc/bashrc ]; then
   . /etc/bashrc
 fi
 
+# forward-search
+stty -ixon
+
 # colors
 readonly OFF='\e[m'
 readonly GREEN='\e[0;32m'
