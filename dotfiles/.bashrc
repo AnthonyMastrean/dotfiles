@@ -14,7 +14,7 @@ readonly GREEN='\e[0;32m'
 readonly ORANGE='\e[0;33m'
 
 # history
-export HISTCONTROL=ignoreboth
+export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=10000
 shopt -s histappend
 
