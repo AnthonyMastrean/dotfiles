@@ -7,6 +7,8 @@
   email         = anthony.mastrean@gmail.com
 [help]
   autocorrect   = 1
+[commit]
+  verbose       = true
 [diff]
   algorithm     = patience
   tool          = diffmerge
