@@ -22,6 +22,7 @@
   prune         = fetch --prune
   purge         = clean --force -xd
   standup       = log --author 'Anthony Mastrean' --color --decorate --oneline --since yesterday
+  stash-all     = stash save --include-untracked
   stat          = status --short --branch
   undo          = reset --soft HEAD^
   unstage       = reset HEAD
