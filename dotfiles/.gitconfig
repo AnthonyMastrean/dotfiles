@@ -17,13 +17,13 @@
 [mergetool]
   prompt        = false
 [alias]
-  standup       = log --author '' --color --decorate --oneline --since yesterday
-  pretty        = log --decorate --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-  wdiff         = diff --word-diff --patience
-  stat          = status --short --branch
-  purge         = clean --force -xd
   edit          = commit --amend
+  pretty        = log --decorate --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  purge         = clean --force -xd
+  standup       = log --author 'Anthony Mastrean' --color --decorate --oneline --since yesterday
+  stat          = status --short --branch
   unstage       = reset HEAD
+  wdiff         = diff --word-diff --patience
 [push]
   default       = simple
 [difftool "diffmerge"]
