@@ -23,6 +23,7 @@
   purge         = clean --force -xd
   standup       = log --author 'Anthony Mastrean' --color --decorate --oneline --since yesterday
   stat          = status --short --branch
+  undo          = reset --soft HEAD^
   unstage       = reset HEAD
   wdiff         = diff --word-diff --patience
 [push]
