@@ -29,6 +29,8 @@
   wdiff         = diff --word-diff --patience
 [push]
   default       = simple
+[pull]
+  rebase        = true
 [difftool "diffmerge"]
   cmd           = "sgdm.exe \"$LOCAL\" \"$REMOTE\""
 [merge]
