@@ -32,6 +32,7 @@
 [difftool "diffmerge"]
   cmd           = "sgdm.exe \"$LOCAL\" \"$REMOTE\""
 [merge]
+  ff            = only
   tool          = diffmerge
 [mergetool "diffmerge"]
   trustExitCode = true
