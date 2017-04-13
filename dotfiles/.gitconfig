@@ -19,6 +19,7 @@
 [alias]
   edit          = commit --amend
   pretty        = log --decorate --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  prune         = fetch --prune
   purge         = clean --force -xd
   standup       = log --author 'Anthony Mastrean' --color --decorate --oneline --since yesterday
   stat          = status --short --branch
