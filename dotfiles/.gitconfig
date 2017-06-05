@@ -31,6 +31,7 @@
   default       = simple
 [pull]
   rebase        = true
+  autostash     = true
 [difftool "diffmerge"]
   cmd           = "sgdm.exe \"$LOCAL\" \"$REMOTE\""
 [merge]
