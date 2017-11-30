@@ -25,7 +25,7 @@
   undo          = reset --soft HEAD^
   unstage       = reset HEAD
   wdiff         = diff --word-diff --patience
-  branch-prune-ps = "!powershell.exe -NoLogo -NonInteractive -NoProfile -Command 'git branch --merged master | ?{ -not($_ -eq \"* master\") } | %{ git branch -D $_.trim() }'"
+  branch-prune-ps = "!powershell.exe -NoLogo -NonInteractive -NoProfile -Command 'git checkout master; git branch --merged master | ?{ -not($_ -eq \"* master\") } | %{ git branch -D $_.trim() }'"
 [push]
   default       = simple
 [pull]
