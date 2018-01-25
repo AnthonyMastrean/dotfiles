@@ -1,6 +1,7 @@
 #---[ directories ]----------
 .bundle
 .vagrant
+.vscode
 
 #---[ files ]----------------
 .cekey
