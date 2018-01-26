@@ -17,13 +17,7 @@
 [mergetool]
   prompt        = false
 [alias]
-  pretty        = log --decorate --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-  purge         = clean --force -xd
-  standup       = log --author 'Anthony Mastrean' --color --decorate --oneline --since yesterday
   stash-all     = stash save --include-untracked
-  stat          = status --short --branch
-  undo          = reset --soft HEAD^
-  unstage       = reset HEAD
   wdiff         = diff --word-diff --patience
   branch-prune-ps = "!powershell.exe -NoLogo -NonInteractive -NoProfile -Command 'git checkout master; git branch --merged master | ?{ -not($_ -eq \"* master\") } | %{ git branch -D $_.trim() }'"
 [push]
