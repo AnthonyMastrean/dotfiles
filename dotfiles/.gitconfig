@@ -36,3 +36,5 @@
   cmd           = "sgdm.exe --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\""
 [remote "origin"]
 	prune = true
+[color]
+	ui = auto
