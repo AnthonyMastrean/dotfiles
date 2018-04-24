@@ -12,6 +12,7 @@
 [diff]
   algorithm     = patience
   tool          = diffmerge
+  colorMoved    = default
 [difftool]
   prompt        = false
 [mergetool]
