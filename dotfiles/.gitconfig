@@ -38,6 +38,6 @@
   trustExitCode = true
   cmd           = "sgdm.exe --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\""
 [remote "origin"]
-	prune = true
+  prune = true
 [color]
-	ui = auto
+  ui = auto
