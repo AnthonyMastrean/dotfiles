@@ -1,3 +1,5 @@
+[includeIf "gitdir:~/Projects/gitlab.com/vaeit/"]
+  path          = ~/Projects/gitlab.com/vaeit/.gitconfig
 [core]
   editor        = notepad
   pager         = less -r
