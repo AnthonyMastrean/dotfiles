@@ -5,10 +5,12 @@
 [user]
   name          = Anthony Mastrean
   email         = anthony.mastrean@gmail.com
+  signingkey    = D74C32B8293FEB8B
 [help]
   autocorrect   = 1
 [commit]
   verbose       = true
+  gpgsign       = true
 [diff]
   algorithm     = patience
   tool          = diffmerge
