@@ -5,6 +5,9 @@ if [ -f /etc/bashrc ]; then
   . /etc/bashrc
 fi
 
+# bash
+export EDITOR=notepad
+
 # forward-search
 stty -ixon
 
