@@ -19,7 +19,11 @@ readonly ORANGE='\e[0;33m'
 # history
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=10000
-shopt -s histappend
+
+shopt -s \
+    histappend \
+    histreedit \
+    histverify
 
 # git
 . ~/dotfiles/bin/git-completion.bash
