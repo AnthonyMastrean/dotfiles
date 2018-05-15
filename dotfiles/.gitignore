@@ -1,14 +1,15 @@
-#---[ directories ]----------
-.bundle
-.vagrant
-.vscode
-
-#---[ files ]----------------
+#---[ AntiVirus ]--------------------------------
 .cekey
-.DS_Store
-Thumbs.db
 
-#---[ file types ]-----------
-*.sublime-workspace
+#---[ Git / Merge ]------------------------------
 *.orig
 *.rej
+
+#---[ Mac ]--------------------------------------
+.DS_Store
+
+#---[ Vagrant ]----------------------------------
+.vagrant
+
+#---[ Windows ]----------------------------------
+Thumbs.db
