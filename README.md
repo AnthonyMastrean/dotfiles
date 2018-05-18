@@ -4,11 +4,7 @@ My precious dotfiles.
 
 ## Getting Started
 
-This project is for a Windows development environment, make sure you know what that means. Clone this repository to a special folder in your user directory.
-
-```bash
-$ git clone git@github.com:AnthonyMastrean/dotfiles.git ~/.dotfiles
-```
+This project is for a Windows development environment, make sure you know what that means.
 
 ## Usage
 

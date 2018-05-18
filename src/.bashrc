@@ -26,8 +26,8 @@ shopt -s \
     histverify
 
 # git
-. ~/dotfiles/bin/git-completion.bash
-. ~/dotfiles/bin/git-prompt.sh
+. ~/git-completion.bash
+. ~/git-prompt.sh
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
