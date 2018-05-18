@@ -13,7 +13,7 @@ PS> Install-Module psake
 
 ## Usage
 
-The default psake task removes any existing files and creates the necessary
+The default Psake task removes any existing files and creates the necessary
 symlinks.
 
 ```
