@@ -43,3 +43,5 @@
     prune = true
 [color]
     ui = auto
+[gpg]
+	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
