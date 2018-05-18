@@ -13,7 +13,8 @@ PS> Install-Module psake
 
 ## Usage
 
-The default psake task overwrites your real dotfiles with symlinks.
+The default psake task removes any existing files and creates the necessary
+symlinks.
 
 ```
 PS> Invoke-Psake
