@@ -30,7 +30,7 @@
 [pull]
     rebase = true
 [rebase]
-    autostash = true
+    autoStash = true
 [difftool "diffmerge"]
     cmd = "sgdm.exe \"$LOCAL\" \"$REMOTE\""
 [merge]
@@ -44,4 +44,4 @@
 [color]
     ui = auto
 [gpg]
-	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
+    program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
