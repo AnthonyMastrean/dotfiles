@@ -26,7 +26,7 @@ Task Link {
     }
 
     # -----[ gpg ]-------------------------------
-    $gpgdir = Join-Path (Resolve-Path '~') '.gnupg'
+    $gpgdir = Join-Path $ENV:APPDATA 'gnupg'
 
     New-Item -Force -Path $gpgdir -Type Directory | Out-Null
 
