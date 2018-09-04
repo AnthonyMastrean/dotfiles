@@ -56,20 +56,4 @@ Task Link {
 
         cmd /c mklink $link $target
     }
-
-    # -----[ sublimetext ]-----------------------
-    $subldir = Join-Path $ENV:APPDATA 'Sublime Text 3/Packages/User'
-
-    New-Item -Force -Path $subldir -Type Directory | Out-Null
-
-    Get-ChildItem -File -Path 'src/.sublime' | %{
-        $link = Join-Path $subldir $_.Name
-        $target = $_.FullName
-
-        if (Test-Path $link) {
-            Remove-Item -Force -Path $link | Out-Null
-        }
-
-        cmd /c mklink $link $target
-    }
 }
