@@ -23,6 +23,7 @@
     stash-all = stash save --include-untracked
     wdiff = diff --word-diff --patience
     branch-prune-ps = "!powershell.exe -NoLogo -NonInteractive -NoProfile -Command 'git checkout master; git branch --merged master | ?{ -not($_ -eq \"* master\") } | %{ git branch -D $_.trim() }'"
+    vanity-sha = !MSYS_NO_PATHCONV=1 docker run --rm -it -v $PWD:/git -v $HOME:/root git-vanity-sha
 [push]
     default = simple
 [pull]
