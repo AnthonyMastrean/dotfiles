@@ -13,7 +13,7 @@
     gpgsign = true
 [diff]
     algorithm = patience
-    tool = diffmerge
+    tool = code
     colorMoved = default
 [difftool]
     prompt = false
@@ -29,14 +29,14 @@
     rebase = true
 [rebase]
     autoStash = true
-[difftool "diffmerge"]
-    cmd = "sgdm.exe \"$LOCAL\" \"$REMOTE\""
+[difftool "code"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
     ff = only
-    tool = diffmerge
-[mergetool "diffmerge"]
+    tool = code
+[mergetool "code"]
     trustExitCode = true
-    cmd = "sgdm.exe --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\""
+    cmd = code --wait $MERGED
 [remote "origin"]
     prune = true
 [color]
