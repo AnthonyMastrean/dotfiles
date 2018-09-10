@@ -23,7 +23,7 @@
     stash-all = stash save --include-untracked
     wdiff = diff --word-diff --patience
     branch-prune = "!git fetch --all; git branch --merged master | grep -v master | xargs -r git branch -d"
-    vanity-sha = !MSYS_NO_PATHCONV=1 docker run --rm -it -v $PWD:/git -v $HOME:/root git-vanity-sha
+    vanity-sha = !MSYS_NO_PATHCONV=1 docker run --rm -it -v $PWD:/git -v $HOME:/root anthonymastrean/git-vanity-sha
 [push]
     default = simple
 [pull]
