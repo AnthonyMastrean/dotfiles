@@ -43,6 +43,6 @@
 [color]
     ui = auto
 [gpg]
-    program = C:\\Program Files (x86)\\GNU\\GnuPG\\pub\\gpg.exe
+    program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
 [winUpdater]
-    recentlySeenVersion = 2.18.0.windows.1
+	recentlySeenVersion = 2.19.1.windows.1
