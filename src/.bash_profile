@@ -1,10 +1,3 @@
-#!/bin/bash
-
-# .bashrc
-if [ -f /etc/bashrc ]; then
-  . /etc/bashrc
-fi
-
 # bash
 export EDITOR=notepad
 
@@ -50,3 +43,6 @@ export PROMPT_COMMAND=__my_ps1
 # aliases
 alias ll='ls -lhA'
 alias irb='irb --noreadline'
+
+# ssh-friendly
+if [ -z "$STY" ]; then screen -R; fi
