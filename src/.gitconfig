@@ -31,13 +31,13 @@
 [rebase]
     autoStash = true
 [difftool "code"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+    cmd = code --reuse-window --wait --diff $LOCAL $REMOTE
 [merge]
     ff = only
     tool = code
 [mergetool "code"]
     trustExitCode = true
-    cmd = code --wait $MERGED
+    cmd = code --reuse-window --wait $MERGED
 [remote "origin"]
     prune = true
 [color]
