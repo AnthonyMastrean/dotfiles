@@ -17,6 +17,8 @@
     colorMoved = default
 [difftool]
     prompt = false
+[merge]
+    algorithm = patience
 [mergetool]
     prompt = false
 [alias]
@@ -32,12 +34,14 @@
     autoStash = true
 [difftool "code"]
     cmd = code --reuse-window --wait --diff $LOCAL $REMOTE
+	cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
     ff = only
     tool = code
 [mergetool "code"]
     trustExitCode = true
     cmd = code --reuse-window --wait $MERGED
+	cmd = code --wait $MERGED
 [remote "origin"]
     prune = true
 [color]
