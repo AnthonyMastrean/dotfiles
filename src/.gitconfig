@@ -1,5 +1,4 @@
 [alias]
-	branch-prune = "!git fetch --all; git branch --merged master | grep -v master | xargs -r git branch -d"
 	stash-all = stash save --include-untracked
 	vanity-sha = !MSYS_NO_PATHCONV=1 docker run --rm -it -v $PWD:/git -v $HOME:/root anthonymastrean/git-vanity-sha
 [commit]
@@ -19,6 +18,9 @@
 	prompt = false
 [difftool "code"]
 	cmd = code --wait --diff $LOCAL $REMOTE
+[fetch]
+	prune = true
+	pruneTags = true
 [gpg]
 	program = C:\\Program Files (x86)\\GNU\\GnuPG\\pub\\gpg.exe
 [help]
@@ -38,8 +40,6 @@
 	default = simple
 [rebase]
 	autoStash = true
-[remote "origin"]
-	prune = true
 [user]
 	email = anthony.mastrean@gmail.com
 	name = Anthony Mastrean
