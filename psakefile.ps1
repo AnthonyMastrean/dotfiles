@@ -10,7 +10,7 @@ Task Link {
             Remove-Item -Force -Path $link | Out-Null
         }
 
-        cmd /c mklink $link $target
+        New-Item -Path $link -ItemType SymbolicLink -Value $target
     }
 
     # -----[ dotfiles ]--------------------------
@@ -22,7 +22,7 @@ Task Link {
             Remove-Item -Force -Path $link | Out-Null
         }
 
-        cmd /c mklink $link $target
+        New-Item -Path $link -ItemType SymbolicLink -Value $target
     }
 
     # -----[ gpg ]-------------------------------
@@ -38,6 +38,6 @@ Task Link {
             Remove-Item -Force -Path $link | Out-Null
         }
 
-        cmd /c mklink $link $target
+        New-Item -Path $link -ItemType SymbolicLink -Value $target
     }
 }
