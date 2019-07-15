@@ -43,6 +43,3 @@ export PROMPT_COMMAND=__my_ps1
 # aliases
 alias ll='ls -lhA'
 alias irb='irb --noreadline'
-
-# ssh-friendly
-if [ -z "$STY" ]; then screen -R; fi
