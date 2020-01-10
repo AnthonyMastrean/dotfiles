@@ -7,7 +7,7 @@
 [color]
 	ui = auto
 [core]
-	editor = notepad
+	editor = code --reuse-window --wait
 	pager = less -r
 	excludesfile = ~/.gitignore
 [diff]
@@ -17,7 +17,7 @@
 [difftool]
 	prompt = false
 [difftool "code"]
-	cmd = code --wait --diff $LOCAL $REMOTE
+	cmd = code --reuse-window --wait --diff $LOCAL $REMOTE
 [fetch]
 	prune = true
 	pruneTags = true
@@ -33,7 +33,7 @@
 	prompt = false
 [mergetool "code"]
 	trustExitCode = true
-	cmd = code --wait $MERGED
+	cmd = code --reuse-window --wait $MERGED
 [pull]
 	rebase = merges
 [push]
@@ -45,4 +45,4 @@
 	name = Anthony Mastrean
 	signingkey = D74C32B8293FEB8B
 [winUpdater]
-	recentlySeenVersion = 2.19.1.windows.1
+	recentlySeenVersion = 2.24.1.windows.2
