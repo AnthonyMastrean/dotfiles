@@ -40,6 +40,7 @@
 	default = simple
 [rebase]
 	autoStash = true
+	autoSquash = true
 [user]
 	email = anthony.mastrean@gmail.com
 	name = Anthony Mastrean
