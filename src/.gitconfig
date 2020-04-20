@@ -27,7 +27,6 @@
 	autocorrect = 1
 [merge]
 	algorithm = patience
-	ff = only
 	tool = code
 [mergetool]
 	prompt = false
