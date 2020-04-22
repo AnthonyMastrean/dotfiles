@@ -1,4 +1,5 @@
 [alias]
+	mr = !sh -c 'git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2' -
 	stash-all = stash save --include-untracked
 	vanity-sha = !MSYS_NO_PATHCONV=1 docker run --rm -it -v $PWD:/git -v $HOME:/root anthonymastrean/git-vanity-sha
 [commit]
